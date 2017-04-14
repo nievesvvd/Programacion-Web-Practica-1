@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
+
+body{
+  font-family: 'Roboto Slab', serif;
+  color: #F0FFFF;
+  background-color: #111;
+}
+
+body.logo-background {
+  background: #000 url("img/index.jpg") 1em 1em no-repeat fixed;
+}
+a{
+  text-decoration: none;
+  color: #F0FFFF;
+}
+/******************************************************************************/
+/*************************************header***********************************/
+header{
+  padding: 0 1em 1em 1em;
+  clear: both;
+  height: 2em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #F0FFFF;
+}
+#headerPic{
+  float:center;
+  padding-left: 41%;
+  width: 200px; height: 30px;
+  position: relative;
+
+}
+/******************************************************************************/
+/************************************footer************************************/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+footer ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li{
+    float: left;
+}
+
+footer ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    background-color: #8A2BE2;
+}
+
+/******************************************************************************/
+/********************************formularios registro**************************/
+.form {
+    margin-right: 5%;
+    color: #F0FFFF;
+}
+
+form input {
+    border-radius: 5px;
+}
+
+.loginForm{
+    float:right;
+    display: list-item;
+}
+
+.registerForm{
+    float: right;
+    text-align: center;
+    display: table-cell;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 1em;
+}
+
+.registerForm h1 {
+    margin: 0.5em;
+}
+
+.registerForm input {
+    display: block;
+    padding: 0.5em;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    vertical-align: middle;
+}
+
+.registerForm button {
+    font-family: 'Raleway', serif;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 10px;
+    background: #8A2BE2;
+    padding: 0.5em;
+    margin: 0.5em;
+    color: #FFF;
+}
+
+/******************************************************************************/
+/********************icono y nombre del perfil del usuario*********************/
+.profileForm{
+    float:right;
+    display: list-item;
+    margin-right: 10%;
+}
+
+.profilepic{
+    width: 40px; height: 40px;
+    vertical-align: top;
+}
+
+.profUser{
+  width: 30px; height: 30px;
+}
+.ItmProf{
+  float: right;
+  vertical-align: top;
+}
+
+.ItmProf a, .ItmProf strong {
+  float: left;
+}
+.profileButton {
+    font-family: 'Raleway', serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 10px;
+    background: #8A2BE2;
+    padding: 0.3em;
+    margin: 0.1em;
+    color: #FFF;
+    float: right;
+}
+
+/******************************************************************************/
+/*********************************imagen indice********************************/
+.indexImg{
+    float:left;
+    padding-left: 5%;
+}
+
+/******************************************************************************/
+/*********************************nav info cuenta******************************/
+nav {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 0.6em;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 60px;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #8A2BE2;
+}
+
+/******************************************************************************/
+/**********************************listas**************************************/
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+ul li a {
+    text-decoration: none;
+    text-align: center;
+}
+
+/******************************************************************************/
+/********************************seccion users web*****************************/
+.item{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 20px;
+}
+.caption{
+  display: block;
+}
+.scroll{
+  overflow-y:auto;
+  height:80px;
+  border-bottom: 0.2px solid gray;
+}
+
+/******************************************************************************/
+/******************************aside users conectados**************************/
+.lateral{
+  float: right;
+  width:10%;
+  border-left: 0.2px solid gray;
+}
+.sideScroll{
+  overflow-y:scroll;
+  height:100%;
+  border-bottom: 0.2px solid gray;
+}
+
+/******************************************************************************/
+/****************************entradas de los usuarios**************************/
+.post{
+  float: left;
+  width: 89%;
+}
+p#muestra {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#gallery{
+  width: 206px;
+  /*height: 206px;*/
+}
+article.postPreview{
+  border: 0.2px solid gray;
+  height: 170px;
+  margin: 7px 10px;
+  float:left;
+  padding: 0.5em;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .postPreview{
+    width: 15%;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .postPreview{
+    width: 23%;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .postPreview{
+    width: 45%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .postPreview{
+    width: 90%;
+  }
+}
