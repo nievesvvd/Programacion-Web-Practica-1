@@ -15,15 +15,18 @@ a{
 }
 /******************************************************************************/
 /*************************************header***********************************/
-header{
+/*header{
   padding: 0 1em 1em 1em;
   clear: both;
   height: 2em;
-}
+}*/
 
 h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
     color: #F0FFFF;
+}
+#sideNote{
+  margin-left: 1em;
 }
 #headerPic{
   float:center;
@@ -34,7 +37,7 @@ h1, h2, h3, h4 {
 }
 /******************************************************************************/
 /************************************footer************************************/
-footer {
+footer.footer-index {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -118,9 +121,13 @@ form input {
     display: list-item;
     margin-right: 10%;
 }
-
+#size{
+  width: 9em;
+  border: 0;
+}
 .profilepic{
-    width: 40px; height: 40px;
+    width: 40px;
+    height: 40px;
     vertical-align: top;
 }
 
@@ -140,11 +147,10 @@ form input {
     font-weight: bold;
     font-size: 0.8em;
     border-radius: 10px;
-    background: #8A2BE2;
+    background: black;
     padding: 0.3em;
     margin: 0.1em;
     color: #FFF;
-    float: right;
 }
 
 /******************************************************************************/
@@ -157,20 +163,18 @@ form input {
 /******************************************************************************/
 /*********************************nav info cuenta******************************/
 nav {
-    right: 0;
-    bottom: 0;
-    left: 0;
     text-align: center;
-    padding: 0.6em;
+    padding: 0em;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    height: 60px;
+    /*height: 60px;*/
 }
 
 nav ul {
     display: inline-block;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li{
@@ -203,25 +207,55 @@ ul li a {
 /******************************************************************************/
 /********************************seccion users web*****************************/
 .item{
-  vertical-align: top;
+  /*vertical-align: top;*/
   display: inline-block;
   text-align: center;
-  margin: 5px 20px;
+  margin: 0.4em 0;
+  /*margin: 5px 20px;*/
 }
+
+.item-post{
+  margin: 0.4em 0;
+  background-color: #8adf68;
+  border-radius: 5px;
+}
+#color{
+  margin: 0.4em 0;
+  background-color: rgb(81, 200, 164);
+  border-radius: 5px;
+  width: 8.5em;
+}
+
+.item-post img {
+  float: left;
+  margin-right: 0.4em;
+  width: 50px;
+  height: 50px;
+}
+
+.item-post .caption p {
+  color: black;
+  width: 9em;
+}
+
 .caption{
   display: block;
 }
+
+.caption p {
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+
 .scroll{
   overflow-y:auto;
-  height:80px;
+  max-height:100px;
   border-bottom: 0.2px solid gray;
 }
 
 /******************************************************************************/
 /******************************aside users conectados**************************/
 .lateral{
-  float: right;
-  width:10%;
   border-left: 0.2px solid gray;
 }
 .sideScroll{
@@ -236,49 +270,57 @@ ul li a {
   float: left;
   width: 89%;
 }
-p#muestra {
+.muestra {
   width: 150px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-#gallery{
-  width: 206px;
-  /*height: 206px;*/
+.gallery{
+  /*width: 15em;*/
+  position: relative;
+    float: left;
+    width:  15em;
+    height: 15em;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
 article.postPreview{
   border: 0.2px solid gray;
   height: 170px;
-  margin: 7px 10px;
-  float:left;
+  margin-top: 1em;
   padding: 0.5em;
+  /*margin: 7px 10px;
+  float:left;
+  padding: 0.5em;*/
 }
 
 /* Large desktop */
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .postPreview{
     width: 15%;
   }
-}
+}*/
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+/*@media (min-width: 768px) and (max-width: 979px) {
   .postPreview{
     width: 23%;
   }
-}
+}*/
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   .postPreview{
     width: 45%;
   }
-}
+}*/
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
   .postPreview{
     width: 90%;
   }
-}
+}*/

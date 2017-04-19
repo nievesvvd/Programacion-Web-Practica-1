@@ -4,150 +4,243 @@
     <meta charset="utf-8">
     <title>Dollars</title>
     <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel = "stylesheet" type = "text/css" href = "./style.css" />
+    <link rel = "stylesheet" type = "text/css" href ="../style.css" />
+    <link rel = "stylesheet" type = "text/css" href ="../structure.css"/>
   </head>
 
-    <body>
-      <!-- Logo e icono de usuario -->
-      <header>
-        <a href = "portada.html">
-        <img src="img/logo.gif" alt="dollars"/></a>
-        <a href = "portada.html" id="headerPic">
-        <img src="img/bar_name.png" alt="dollars"/></a>
-        <div class="ItmProf">
-          <a href="nieves.html">
-            <strong class="caption">Nieves</strong>
-            <figure class="item">
-              <img src="img/icon.jpg" alt="dollars" class="profUser"/>
-            </figure>
+  <body>
+    <!-- ********************* Logo e icono de usuario ********************* -->
+    <div class="contenedor">
+      <header class="fila">
+        <figure class="columna cuatro">
+          <a href ="../portada.html">
+            <img src="../img/logo.gif" alt="dollars"/>
           </a>
-          <button onclick="location.href='index.html'" type="button" class = "profileButton"> Salir</button>
-        </div>
-      </header>
+        </figure>
 
-      <!-- biografia | fotos | info -->
-      <nav>
+        <figure class="tres columna">
+          <a href ="../portada.html" id="headerPic">
+            <img src="../img/bar_name.png" alt="nombreRed"/>
+          </a>
+        </figure>
+
+        <figure class="item-post columna diez" id="color">
+          <a href="./nieves.html" class="caption">
+            <img src="../img/icon.jpg" alt="profileNieves" class="profilepic"/>
+            <p ><strong>Nieves</strong></p>
+          </a>
+          <button onclick="location.href='../index.html'" type="button" class = "profileButton"> Salir</button>
+        </figure>
+      </header>
+      <!-- ******************** Logo e icono de usuario ******************** -->
+
+      <!-- ******************** biografia | fotos | info ******************* -->
+      <nav class="fila">
         <ul>
-          <li><a href="biografia.html">Biografía</a></li>
+          <li><a href="./laura.html">Biografía</a></li>
           <li><a href="fotos.html">Fotos</a></li>
           <li><a href="informacion.html">Información</a></li>
         </ul>
       </nav>
+      <!-- ******************** biografia | fotos | info ******************* -->
 
-      <!-- usuarios de la web -->
-      <section class="scroll">
-        <figure class="item">
-          <a href="samuel.html" class="caption">Samuel</a>
-          <a href = "samuel.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+      <!-- ********************** usuarios de la web *********************** -->
+      <section class="scroll fila">
+        <figure class="item columna dos">
+          <a href="./samuel.html" class="caption">
+            <p>Samuel</p>
+            <img src="../img/icon.jpg" alt="profileSamuel" class="profilepic"/>
+          </a>
         </figure>
-        <figure class="item">
-          <a href="antonio.html" class="caption">Antonio</a>
-          <a href = "antonio.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+
+        <figure class="item columna dos">
+          <a href="./antonio.html" class="caption">
+            <p>Antonio</p>
+            <img src="../img/icon.jpg" alt="profileAntonio" class="profilepic"/>
+          </a>
         </figure>
-        <figure class="item">
-          <a href="jose.html" class="caption">Jose</a>
-          <a href = "jose.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+
+        <figure class="item columna dos">
+          <a href="./jose.html" class="caption">
+            <p>Jose</p>
+            <img src="../img/icon.jpg" alt="profileJose" class="profilepic"/>
+          </a>
         </figure>
-        <figure class="item">
-          <a href="mariTrini.html" class="caption">Mari Trini</a>
-          <a href = "mariTrini.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+
+        <figure class="item columna dos">
+          <a href="./mariTrini.html" class="caption">
+            <p>Mari Trini</p>
+            <img src="../img/icon.jpg" alt="prifileTrini" class="profilepic"/>
+          </a>
         </figure>
-        <figure class="item">
-          <a href="paqui.html" class="caption">Paqui</a>
-          <a href = "paqui.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+
+        <figure class="item columna dos">
+          <a href="./paqui.html" class="caption">
+            <p>Paqui</p>
+            <img src="../img/icon.jpg" alt="profilePaqui" class="profilepic"/>
+          </a>
+        </figure>
+        <figure class="item columna dos">
+          <a href="./julio.html" class="caption">
+            <p>Julio</p>
+            <img src="../img/icon.jpg" alt="profileJulio" class="profilepic"/>
+          </a>
         </figure>
       </section>
+      <!-- ********************** usuarios de la web *********************** -->
 
-      <!-- Entradas del usuario -->
-      <section class="post">
-        <article class="postPreview">
-          <figure class="item">
-            <a href="laura.html" class="caption">Laura</a>
-            <a href = "laura.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+      <!-- ******************** Entradas de los usuarios ******************* -->
+      <section class="fila">
+        <section class="columna diez">
+          <article class="postPreview columna tres">
+            <figure class="item-post fila">
+              <a href="./laura.html" class="caption">
+                <img src="../img/icon.jpg" alt="profileLaura" class="profilepic"/>
+                <p><strong>Laura</strong></p>
+                <p><small>1 hora</small></p>
+              </a>
+            </figure>
+            <div class="fila">
+              <a href="./laura.html"><h1>Título</h1></a>
+              <p class="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
+            </div>
+          </article>
+
+          <article class="postPreview columna tres">
+            <figure class="item-post fila">
+              <a href="./laura.html" class="caption">
+                <img src="../img/icon.jpg" alt="profileLaura" class="profilepic"/>
+                <p><strong>Laura</strong></p>
+                <p><small>5 horas</small></p>
+              </a>
+            </figure>
+            <div class="fila">
+              <a href="./laura.html"><h1>Título</h1></a>
+              <p class="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
+            </div>
+          </article>
+
+          <article class="postPreview columna tres">
+            <figure class="item-post fila">
+              <a href="./laura.html" class="caption">
+                <img src="../img/icon.jpg" alt="profileLaura" class="profilepic"/>
+                <p><strong>Laura</strong></p>
+                <p><small>7 horas</small></p>
+              </a>
+            </figure>
+            <div class="fila">
+              <a href="./laura.html"><h1>Título</h1></a>
+              <p class="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
+            </div>
+          </article>
+
+          <article class="postPreview columna tres">
+            <figure class="item-post fila">
+              <a href="./laura.html" class="caption">
+                <img src="../img/icon.jpg" alt="profileLaura" class="profilepic"/>
+                <p><strong>Laura</strong></p>
+                <p><small>8 horas</small></p>
+              </a>
+            </figure>
+            <div class="fila">
+              <a href="./laura.html"><h1>Título</h1></a>
+              <p class="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
+            </div>
+          </article>
+
+          <article class="postPreview columna tres">
+            <figure class="item-post fila">
+              <a href="./laura.html" class="caption">
+                <img src="../img/icon.jpg" alt="profileLaura" class="profilepic"/>
+                <p><strong>Laura</strong></p>
+                <p><small>10 horas</small></p>
+              </a>
+            </figure>
+            <div class="fila">
+              <a href="./laura.html"><h1>Título</h1></a>
+              <p class="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
+            </div>
+          </article>
+
+          <article class="postPreview columna tres">
+            <figure class="item-post fila">
+              <a href="./laura.html" class="caption">
+                <img src="../img/icon.jpg" alt="profileLaura" class="profilepic"/>
+                <p><strong>Laura</strong></p>
+                <p><small>12 horas</small></p>
+              </a>
+            </figure>
+            <div class="fila">
+              <a href="./laura.html"><h1>Título</h1></a>
+              <p class="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
+            </div>
+          </article>
+
+          <article class="postPreview columna tres">
+            <figure class="item-post fila">
+              <a href="./laura.html" class="caption">
+                <img src="../img/icon.jpg" alt="profileLaura" class="profilepic"/>
+                <p><strong>Laura</strong></p>
+                <p><small>15 horas</small></p>
+              </a>
+            </figure>
+            <div class="fila">
+              <a href="./laura.html"><h1>Título</h1></a>
+              <p class="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
+            </div>
+          </article>
+        </section>
+        <!-- ******************* Entradas de los usuarios ****************** -->
+
+      <!-- ********************* usuarios conectados ********************* -->
+        <aside class="columna dos lateral sideScroll fila">
+          <h3 id="sideNote">Usuarios conectados</h3>
+          <figure class="item columna doce">
+            <a href="./ana.html" class="caption">
+              <p>Ana</p>
+              <img src="../img/icon.jpg" alt="profileAna" class="profilepic"/>
+            </a>
           </figure>
-          <a href = "laura.html"><h1>Título</h1></a></a>
-          <p id="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
-        </article>
-        <article class="postPreview">
-          <figure class="item">
-            <a href="laura.html" class="caption">Laura</a>
-            <a href = "laura.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+
+          <figure class="item columna doce">
+            <a href="./guille.html" class="caption">
+              <p>Guille</p>
+              <img src="../img/icon.jpg" alt="profileGuille" class="profilepic"/>
+            </a>
           </figure>
-          <a href = "laura.html"><h1>Título</h1></a>
-          <p id="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
-        </article>
-        <article class="postPreview">
-          <figure class="item">
-            <a href="laura.html" class="caption">Laura</a>
-            <a href = "laura.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+
+          <figure class="item columna doce">
+            <a href="./rafa.html" class="caption">
+              <p>Rafa</p>
+              <img src="../img/icon.jpg" alt="profileRafa" class="profilepic"/>
+            </a>
           </figure>
-          <a href = "laura.html"><h1>Título</h1></a>
-          <p id="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
-        </article>
-        <article class="postPreview">
-          <figure class="item">
-            <a href="laura.html" class="caption">Laura</a>
-            <a href = "laura.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+
+          <figure class="item columna doce">
+            <a href="./naza.html" class="caption">
+              <p>Naza</p>
+              <img src="../img/icon.jpg" alt="profileNaza" class="profilepic"/>
+            </a>
           </figure>
-          <a href = "laura.html"><h1>Título</h1></a>
-          <p id="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
-        </article>
-        <article class="postPreview">
-          <figure class="item">
-            <a href="laura.html" class="caption">Laura</a>
-            <a href = "laura.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
+
+          <figure class="item columna doce">
+            <a href="./jesus.html" class="caption">
+              <p>Jesús</p>
+              <img src="../img/icon.jpg" alt="profileJesus" class="profilepic"/>
+            </a>
           </figure>
-          <a href = "laura.html"><h1>Título</h1></a>
-          <p id="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
-        </article>
-        <article class="postPreview">
-          <figure class="item">
-            <a href="laura.html" class="caption">Laura</a>
-            <a href = "laura.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
-          </figure>
-          <a href = "laura.html"><h1>Título</h1></a>
-          <p id="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
-        </article>
-        <article class="postPreview">
-          <figure class="item">
-            <a href="laura.html" class="caption">Laura</a>
-            <a href = "laura.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
-          </figure>
-          <a href = "laura.html"><h1>Título</h1></a>
-          <p id="muestra">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.t India's integrity is being undermined.</p>
-        </article>
+        </aside>
       </section>
+      <!-- ********************** usuarios conectados ********************** -->
 
-      <!-- usuarios conectados -->
-      <aside class="lateral sideScroll">
-        <figure class="item">
-          <a href="ana.html" class="caption">Ana</a>
-          <a href = "ana.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
-        </figure>
-        <figure class="item">
-          <a href="guille.html" class="caption">Guille</a>
-          <a href = "guille.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
-        </figure>
-        <figure class="item">
-          <a href="rafa.html" class="caption">Rafa</a>
-          <a href = "rafa.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
-        </figure>
-        <figure class="item">
-          <a href="naza.html" class="caption">Naza</a>
-          <a href = "naza.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
-        </figure>
-        <figure class="item">
-          <a href="jesus.html" class="caption">Jesús</a>
-          <a href = "jesus.html"><img src="img/icon.jpg" alt="dollars" class="profilepic"/></a>
-        </figure>
-      </aside>
-
-      <footer class="footer">
+      <!-- **************************** footer ***************************** -->
+      <footer class="fila">
         <ul>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="PW-PI-Evaluable-Responsive_C1617.pdf">Acerca de</a></li>
+          <li><a href="../contacto.html">Contacto</a></li>
+          <li><a href="../PW-PI-Evaluable-Responsive_C1617.pdf">Acerca de</a></li>
         </ul>
       </footer>
-    </body>
-  </html>
+      <!-- **************************** footer ***************************** -->
+    </div>
   </body>
+</html>

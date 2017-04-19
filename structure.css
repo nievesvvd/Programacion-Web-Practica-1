@@ -3,7 +3,7 @@
 .contenedor {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  /*max-width: 960px;*/
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -25,10 +25,14 @@
 /* Tamaño mayor a 550px */
 @media (min-width: 550px) {
   .contenedor {
-    width: 80%; }
+    width: 90%; }
   .columna {
     margin-left: 4%; }
-  .columna:first-child {
+  .columna:first-child,
+  .dos.columna:nth-child(7n),
+  .tres.columna:nth-child(5n),
+  .cuatro.columna:nth-child(3n),
+  .seis.columna:nth-child(2n) {
     margin-left: 0; }
 
   .una.columna      { width: 4.66666666667%; }
@@ -43,3 +47,8 @@
   .diez.columna     { width: 82.6666666667%; }
   .once.columna     { width: 91.3333333333%; }
   .doce.columna     { width: 100%; margin-left: 0; }
+
+.fila:after{
+  content: "";
+  display: table;
+  clear: both; }
