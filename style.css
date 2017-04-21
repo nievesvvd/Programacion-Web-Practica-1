@@ -25,6 +25,11 @@ h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
     color: #F0FFFF;
 }
+
+.tag{
+  color: #8A2BE2 !important;
+}
+
 #sideNote{
   margin-left: 1em;
 }
@@ -256,6 +261,7 @@ ul li a {
   overflow-y:auto;
   max-height:6.2em;
   border-bottom: 0.2px solid gray;
+  /*background-color:lightgray;*/
 }
 
 /******************************************************************************/
@@ -301,6 +307,32 @@ article.postPreview{
   /*float:left;
   padding: 0.5em;*/
 }
+
+/******************************************************************************/
+/*******************************paginas de entradas****************************/
+.page{
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.page a{
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+page a.active{
+  background-color: #8A2BE2;
+  color: white;
+  border-radius: 5px;
+}
+
+.page a:hover:not(.active) {
+    background-color: #4B0082;
+    border-radius: 5px;
+}
+
 /******************************************************************************/
 /********************************nuevas entradas*******************************/
 .entryTitle{
