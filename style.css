@@ -69,13 +69,18 @@ footer ul li a:hover {
 
 /******************************************************************************/
 /********************************formularios registro**************************/
-.form {
-    margin-right: 5%;
-    color: #F0FFFF;
+.inputForm {
+  margin-right: 5%;
+  color: #F0FFFF;
 }
 
-form input {
+.indexInput {
     border-radius: 5px;
+}
+
+.infoForm{
+  /*width: 15em;*/
+  float:center;
 }
 
 .loginForm{
@@ -249,7 +254,7 @@ ul li a {
 
 .scroll{
   overflow-y:auto;
-  max-height:100px;
+  max-height:6.2em;
   border-bottom: 0.2px solid gray;
 }
 
@@ -271,7 +276,7 @@ ul li a {
   width: 89%;
 }
 .muestra {
-  width: 150px;
+  width: 9.4em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -289,38 +294,75 @@ ul li a {
 }
 article.postPreview{
   border: 0.2px solid gray;
-  height: 170px;
+  height: 10.6em;
   margin-top: 1em;
   padding: 0.5em;
-  /*margin: 7px 10px;
-  float:left;
+  margin: 0.4em 1em;
+  /*float:left;
   padding: 0.5em;*/
 }
+/******************************************************************************/
+/********************************nuevas entradas*******************************/
+.entryTitle{
+  border: 0.2px solid gray;
+  height: 2.5em;
+  float: right;
+  margin-top: 0.4em;
+  background-color:#111;
+  margin-left: 1em;
+  text-align: center;
+  color: white;
+}
+.entryBody{
+  border: 0.2px solid gray;
+  height: 4em;
+  float: right;
+  margin-top: 0.3em;
+  background-color:#111;
+  text-align: center;
+  color: white;
+}
 
-/* Large desktop */
-/*@media (min-width: 1200px) {
-  .postPreview{
-    width: 15%;
-  }
-}*/
+.entryButton{
+  background-color:  rgb(81, 200, 164);
+  border: none;
+  color: white;
+  padding: 0.6em 1em;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 0.4em 0.1em;
+  cursor: pointer;
+}
 
-/* Portrait tablet to landscape and desktop */
-/*@media (min-width: 768px) and (max-width: 979px) {
-  .postPreview{
-    width: 23%;
-  }
-}*/
+.entryIcon{
+  border-radius: 5px;
+  float: left;
+  margin: 0.4em 0.4em;
+  width: 50px;
+  height: 50px;
+}
+.entryImage{
+  height: 15em;
+}
 
-/* Landscape phone to portrait tablet */
-/*@media (max-width: 767px) {
-  .postPreview{
-    width: 45%;
-  }
-}*/
+.entryBorder{
+  border-bottom: 0.3px dotted #8A2BE2 ;
+}
 
-/* Landscape phones and down */
-/*@media (max-width: 480px) {
-  .postPreview{
-    width: 90%;
-  }
-}*/
+.entryPost img {
+  float: left;
+  margin-right: 0.4em;
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+.entryPost {
+  color: white;
+  width: 15em;
+  margin: 0.3em 0.3em;
+}
+#entryTitle{
+  color:rgb(28, 81, 177);
+}
