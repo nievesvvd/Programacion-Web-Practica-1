@@ -51,7 +51,8 @@
 .fila:after{
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
   /* Large desktop */
   /*@media (min-width: 1200px) {
@@ -79,4 +80,8 @@
     .postPreview{
       width: 100%;
     }
+  }
+
+  .clearfix {
+    clear: both;
   }

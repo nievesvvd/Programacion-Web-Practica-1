@@ -33,13 +33,12 @@ h1, h2, h3, h4 {
 #sideNote{
   margin-left: 1em;
 }
-#headerPic{
-  float:center;
-  padding-left: 41%;
-  width: 200px; height: 30px;
-  position: relative;
 
+#headerPic {
+  display: block;
+  margin: auto;
 }
+
 /******************************************************************************/
 /************************************footer************************************/
 footer.footer-index {
@@ -229,8 +228,9 @@ ul li a {
   background-color: #8adf68;
   border-radius: 5px;
 }
+
 #color{
-  margin: 0.4em 0;
+  float: right;
   background-color: rgb(81, 200, 164);
   border-radius: 5px;
   width: 8.5em;
